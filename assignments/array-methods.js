@@ -99,5 +99,11 @@ console.log(firstNamesID);
 
 
 // Problem 2 .filter
+// The first 25 runners need to be split off into a seperate array by their ID.
+let firstTwentyFive = runners.filter(item => item.id < 26)
+
+console.log(firstTwentyFive);
+
+
 
 // Problem 3 .reduce
