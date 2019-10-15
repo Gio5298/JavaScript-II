@@ -80,7 +80,6 @@ console.log(runnersLargeSizeShirt);
 // ==== Challenge 4: Use .reduce() ====
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations and save the total into a ticketPriceTotal variable.
 let ticketPriceTotal = runners.reduce(function(accumulator, currentValue){
-  console.log(accumulator);
   console.log(currentValue.donation);
   return accumulator + currentValue.donation;
 }, 0);
@@ -105,5 +104,10 @@ let firstTwentyFive = runners.filter(item => item.id < 26)
 console.log(firstTwentyFive);
 
 
+// Problem 3 .map
+// The event director needs to have all the runners' emails in lowercase because the director CAN'T SEE UPPERCASE LETTERS. Populate an array called `emailLowerCase`. This array will contain just strings.
+let emailLowerCase = runners.map(function(currentValue){
+  return currentValue.email.toLowerCase();
+});
 
-// Problem 3 .reduce
+console.log(emailLowerCase);
