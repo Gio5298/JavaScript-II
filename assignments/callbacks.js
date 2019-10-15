@@ -2,7 +2,7 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
-/* 
+
 
   // GIVEN THIS PROBLEM:
 
@@ -23,10 +23,10 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   // To test our solution, we can use the given `items` array and a variety of callbacks.
   // Note how callbacks can be declared separately, or inlined.
 
-  // TEST 1 (inlined callback):
+  //TEST 1 (inlined callback):
 
   const test1 = firstItem(items, item => `I love my ${item}!`);
-  console.log(test1); // "I love my Pencil!"
+  console.log(test1); "I love my Pencil!"
 
   // TEST 2 (declaring callback before hand):
 
@@ -36,7 +36,6 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
   const test2 = firstItem(items, logExorbitantPrice);
   console.log(test2); // "this Pencil is worth a million dollars!"
-*/
 
 
 function getLength(arr, cb) {
@@ -67,4 +66,3 @@ function removeDuplicates(array, cb) {
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
 }
-
